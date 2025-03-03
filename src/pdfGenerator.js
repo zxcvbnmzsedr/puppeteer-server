@@ -8,7 +8,7 @@ const MAX_RETRIES = 3; // 最大重试次数
 
 const chromePaths = {
     darwin: '/Applications/Chromium.app/Contents/MacOS/Chromium',
-    linux: '/usr/bin/chromium-browser',
+    linux: process.env.CHROME_PATH || '/usr/bin/chromium',
     win32: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe'
 };
 
