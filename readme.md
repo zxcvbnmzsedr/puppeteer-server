@@ -29,13 +29,13 @@
 
 1. 克隆项目：
 ```bash
-git clone <repository-url>
+git clone https://github.com/zxcvbnmzsedr/puppeteer-server.git 
 cd pdf-generator-service
 ```
 
 2. 启动服务：
 ```bash
-docker-compose up --build
+docker compose up --build
 ```
 
 服务将在 http://localhost:3000 启动
@@ -44,12 +44,12 @@ docker-compose up --build
 
 1. 安装依赖：
 ```bash
-npm install
+pnpm install
 ```
 
 2. 启动服务：
 ```bash
-node src/index.js
+pnpm start
 ```
 
 ## API 使用说明
