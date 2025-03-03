@@ -112,7 +112,7 @@ async function generatePDF(source, options = {}, retryCount = 0) {
 
         console.log('正在生成PDF...');
         const pdfBuffer = await page.pdf({
-            format: options.format || 'A4',
+            format: options.format,
             ...options
         });
         console.log('PDF生成成功');
